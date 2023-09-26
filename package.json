@@ -1,0 +1,92 @@
+{
+  "name": "yoda-admin-react",
+  "private": true,
+  "proxy": "http://localhost:3000",
+  "dependencies": {
+    "@ant-design/charts": "^1.4.2",
+    "@apollo/client": "^3.7.1",
+    "@craco/craco": "^6.2.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "ahooks": "^3.7.2",
+    "antd": "^4.16.11",
+    "antd-mask-input": "^0.1.15",
+    "apexcharts": "^3.27.3",
+    "array-move": "^4.0.0",
+    "axios": "^0.21.1",
+    "classnames": "^2.3.1",
+    "craco-less": "^1.18.0",
+    "dayjs": "^1.11.6",
+    "eslint-plugin-disable": "^2.0.1",
+    "framer-motion": "^6.5.1",
+    "graphql": "^16.6.0",
+    "iconsax-react": "^0.0.8",
+    "immutability-helper": "^3.1.1",
+    "less": "^2.7.0",
+    "less-loader": "^10.0.1",
+    "moment": "^2.29.1",
+    "prop-types": "^15.7.2",
+    "rc-resize-observer": "^1.0.1",
+    "react": "^17.0.2",
+    "react-apexcharts": "^1.3.9",
+    "react-autosuggest": "^10.1.0",
+    "react-countdown": "^2.3.2",
+    "react-dnd": "^14.0.4",
+    "react-dnd-html5-backend": "^14.0.2",
+    "react-dom": "^17.0.2",
+    "react-flatpickr": "^3.10.7",
+    "react-highlight-words": "^0.17.0",
+    "react-hooks-global-state": "^2.1.0",
+    "react-icons": "^4.2.0",
+    "react-id-swiper": "^4.0.0",
+    "react-intl": "^5.25.1",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-select": "^4.3.1",
+    "react-slick": "^0.28.1",
+    "react-sortable-hoc": "^2.0.0",
+    "react-syntax-highlighter": "^15.4.4",
+    "react-window": "^1.8.6",
+    "redux-debounced": "^0.5.0",
+    "redux-devtools-extension": "^2.13.9",
+    "swiper": "5.4.5",
+    "web-vitals": "^1.0.1",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.18.12/xlsx-0.18.12.tgz"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "/node_modules/(?!antd|@ant-design|rc-.+?|@babel/runtime).+(js|jsx)$"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel-plugin-root-import": "^6.6.0"
+  },
+  "overrides": {
+    "react-error-overlay": "6.0.9"
+  }
+}

@@ -1,0 +1,62 @@
+.ant-alert {
+  padding: @padding-sm;
+
+  .ant-alert-icon {
+    margin-right: 20px;
+  }
+
+  .ant-alert-close-icon {
+    .anticon-close {
+      display: block;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 13px;
+      height: 13px;
+
+      svg {
+        display: none;
+      }
+    }
+  }
+
+  &-success {
+    .ant-alert-content {
+
+      .ant-alert-message,
+      .ant-alert-description {
+        color: @success-1;
+      }
+    }
+  }
+
+  &-info {
+    .ant-alert-content {
+
+      .ant-alert-message,
+      .ant-alert-description {
+        color: @info-1;
+      }
+    }
+  }
+
+  &-warning {
+    .ant-alert-content {
+
+      .ant-alert-message,
+      .ant-alert-description {
+        color: @warning-1;
+      }
+    }
+  }
+
+  &-error {
+    .ant-alert-content {
+
+      .ant-alert-message,
+      .ant-alert-description {
+        color: @danger-1;
+      }
+    }
+  }
+}

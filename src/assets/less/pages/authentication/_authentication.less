@@ -1,0 +1,55 @@
+.@{class-prefix}-authentication-page {
+  position: relative;
+  min-height: 100vh;
+  margin: 0 !important;
+  overflow: hidden;
+
+  .@{class-prefix}-auth-header-title{
+    @media @sm {
+      display: none;
+    }
+  }
+
+  .@{class-prefix}-logo-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .@{class-prefix}-bg-item {
+    margin-top: 100px;
+  }
+
+  .@{class-prefix}-text-item {
+    margin-top: -250px;
+
+    @media @sm {
+      margin-top: -100px;
+    }
+
+    @media @sm {
+      margin-top: -80px;
+      padding: 0 24px;
+
+      h2 {
+        font-size: 24px;
+        line-height: 1.3;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.4;
+      }
+    }
+  }
+}
+
+// RTL
+html[dir="rtl"] {
+  .@{class-prefix}-authentication-page {
+    .@{class-prefix}-logo-item {
+      right: 0;
+      left: auto;
+    }
+  }
+}

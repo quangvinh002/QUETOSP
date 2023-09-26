@@ -1,0 +1,97 @@
+.@{class-prefix}-exchange-card {
+  .ant-card-body {
+    padding: 0;
+  }
+
+  .ant-list-item {
+    padding: 16px;
+  }
+
+  .ant-list-header {
+    padding: 16px 16px 0px;
+  }
+}
+
+.@{class-prefix}-invoice-card {
+  p {
+    margin: 0;
+    color: @b-80;
+    line-height: 21px;
+  }
+
+  .ant-table-thead {
+    >tr {
+      >th {
+        color: @b-100;
+        font-weight: 500;
+        font-size: 12;
+        line-height: 18px;
+        text-align: left;
+        background: none !important;
+        border-bottom: none;
+        padding: 0px;
+
+      }
+    }
+  }
+
+  .ant-table-tbody>tr>td {
+    border-bottom: none;
+    padding: 16px 0px 0px;
+  }
+
+  .ant-table-tbody {
+    >tr.ant-table-row {
+      &:hover {
+        >td {
+          background: @b-0;
+        }
+      }
+    }
+  }
+}
+
+@media print {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  .ant-layout-sider {
+    display: none;
+  }
+
+  .ant-layout-header {
+    display: none;
+  }
+
+  .ant-layout-footer {
+    display: none;
+  }
+
+  .@{class-prefix}exchange-card {
+    display: none;
+  }
+
+  .ant-breadcrumb {
+    display: none;
+  }
+
+  .@{class-prefix}print-none {
+    display: none;
+  }
+
+  .@{class-prefix}invoice-card {
+    border: none;
+    padding: 0px;
+  }
+
+  .@{class-prefix}print-info {
+    max-width: 33%;
+  }
+
+  .@{class-prefix}print-checkout {
+    max-width: 33%;
+
+  }
+}

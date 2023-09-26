@@ -1,0 +1,39 @@
+.@{class-prefix}-dashboard-line{
+  @media @lg {
+    display: none;
+  }
+}
+
+.@{class-prefix}-analytics-col-2 {
+  &.@{class-prefix}-boxed-active{
+    flex: 0 0 360px;
+  }
+  
+  &:not(.@{class-prefix}-boxed-active){
+    flex: 0 0 382px;
+
+    @media screen and (max-width: 1370px) {
+      flex: 0 0 360px;
+    }
+  }
+
+  @media @lg {
+    flex: 0 0 100% !important;
+  }
+}
+
+.@{class-prefix}-dashboard-feature-card{
+  .@{class-prefix}-dashboard-feature-card-icon{
+    svg{
+      transition: 0.4s;
+    }
+  }
+
+  &:hover{
+    .@{class-prefix}-dashboard-feature-card-icon{
+      svg{
+        transform: scale(1.2);
+      }
+    }
+  }
+}
